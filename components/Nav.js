@@ -10,7 +10,7 @@ const Nav = () => {
             {Object.entries(requests).map(([key, {title, url}]) => (
                 <h2
                  key={key}
-                 className='last:pr-24 transition transform duration-100 hover:scale-125 cursor-pointer hover:text-white active:text-red-500'
+                 className='last:pr-24 transition transform duration-100 hover:scale-125 cursor-pointer hover:text-white active:text-red-500 select-none'
                  onClick={() => router.push(`/?genre=${key}`) }
                  >{title}</h2>
             ))}
